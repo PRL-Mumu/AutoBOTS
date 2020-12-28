@@ -1,0 +1,4 @@
+import time
+import os
+import pyautogui as pe
+os.startfile('C:/Program Files (x86)/Google/Chrome/Application/chrome.exe'),time.sleep(1),pe.typewrite('https://www.youtube.com/watch?v=dQw4w9WgXcQ'),pe.press('enter')

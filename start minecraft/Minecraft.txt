@@ -1,0 +1,7 @@
+import pyautogui as pe
+import os
+import time
+
+C:\Users/blaga/AppData/Roaming/.minecraft/TLauncher.exe
+
+os.startfile('C:\Users/blaga/AppData/Roaming/.minecraft/TLauncher.exe'),time.sleep(4),pe.click(820, 670)

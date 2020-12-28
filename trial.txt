@@ -1,0 +1,32 @@
+import pyautogui as pe # reffering pyautogui as pe just to save time
+import os
+import time
+import win32api, win32con
+
+ os.startfile('C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Riot Games/League of Legends')
+
+os.startfile('C:/Program Files/Windows NT/Accessories/WordPad.exe')
+
+os.startfile('C:/Program Files/Windows NT/Accessories/WordPad.exe'),time.sleep(1),pe.typewrite('Autobot is functioning',0.1),time.sleep(2),pe.hotkey('alt','f4'),time.sleep(3),pe.press('enter')
+
+os.startfile('C:/Program Files (x86)/Google/Chrome/Application/chrome.exe'),time.sleep(1),pe.typewrite('https://www.youtube.com/watch?v=dQw4w9WgXcQ'),pe.press('enter')
+
+pe.displayMousePosition() #to get mouse position
+
+pe.click(220, 515),pe.keyDown('ctrl'),pe.press('c'),pe.keyUp('ctrl')
+
+#Better Click function (requires win32api and win32con)
+
+def click(x,y):
+	win32api.SetCursorPos((x,y))
+	win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN,0,0)
+	time.sleep(0.01)
+	win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP,0,0)
+
+def rclick(x,y):
+	win32api.SetCursorPos((x,y))
+	win32api.mouse_event(win32con.MOUSEEVENTF_RIGHTDOWN,0,0)
+	time.sleep(0.01)
+	win32api.mouse_event(win32con.MOUSEEVENTF_RIGHTUP,0,0)
+
+****************************************************************
